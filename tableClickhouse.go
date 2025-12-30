@@ -21,5 +21,5 @@ func (ch *ClickhouseTbl) FullTableName() string {
 }
 
 func (ch *ClickhouseTbl) QueryTableName() string {
-	return string(ch.TableName)
+	return string(ch.DatabaseName) + "." + string(ch.TableName)
 }

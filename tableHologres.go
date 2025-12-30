@@ -23,5 +23,5 @@ func (ch *HologresTbl) FullTableName() string {
 }
 
 func (ch *HologresTbl) QueryTableName() string {
-	return string(ch.TableName)
+	return string(ch.PatternName) + "." + string(ch.TableName)
 }

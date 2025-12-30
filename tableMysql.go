@@ -21,5 +21,5 @@ func (ch *MysqlTbl) FullTableName() string {
 }
 
 func (ch *MysqlTbl) QueryTableName() string {
-	return string(ch.TableName)
+	return string(ch.DatabaseName) + "." + string(ch.TableName)
 }

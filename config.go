@@ -8,7 +8,7 @@ type Config struct {
 }
 
 func (c *Config) Init() {
-	RegisterDebugKey(debugKey)
+	RegisterDebugKey(c.debugKey)
 	for name, db := range c.gormDbs {
 		RegisterGormDb(name, db)
 	}
