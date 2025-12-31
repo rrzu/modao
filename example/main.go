@@ -39,5 +39,6 @@ func main() {
 		return tx.Select("*").Find(&map[string]interface{}{})
 	})
 
+	// 输出：SELECT * FROM `dim_order_type`
 	fmt.Println(sql)
 }
